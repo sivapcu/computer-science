@@ -15,10 +15,10 @@ public class MaxHeap<E> {
 	}
 
 	private void trickleUp(int indexOfChild) {
-		int indexOfParent = (indexOfChild - 1) / 2;
 		if (indexOfChild == 0) {
 			return; // current element is the root.
 		}
+		int indexOfParent = (indexOfChild - 1) / 2;
 		if (((Comparable<E>) array[indexOfParent]).compareTo(array[indexOfChild]) < 0) {
 			// if parent is less than child, swap.
 			// after swap, call trickle up recursively on the current parent
