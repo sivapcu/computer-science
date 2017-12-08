@@ -23,6 +23,8 @@ public class InsertionSort {
 					int temp = input[j+1];
 					input[j+1] = input[j];
 					input[j] = temp;
+				} else {
+					break;
 				}
 			}
 			System.out.println(Arrays.toString(input));
@@ -37,6 +39,8 @@ public class InsertionSort {
 					int temp = input[j+1];
 					input[j+1] = input[j];
 					input[j] = temp;
+				} else {
+					break;
 				}
 			}
 			System.out.println(Arrays.toString(input));
