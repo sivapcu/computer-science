@@ -1,4 +1,4 @@
-package com.sivapcu.hackerearth.practice.io;
+package com.sivapcu.hackerearth.practice.sort;
 
 import java.io.BufferedReader;
 import java.io.IOException;

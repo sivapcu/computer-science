@@ -11,9 +11,9 @@ public class Factorial {
 		sc.close();
 	}
 	
-	private static int factorial(int input) {
+	private static long factorial(int input) {
 		if(input > 1 ) {
-			return input*factorial(input-1);			
+			return input*factorial(input-1)%1000000007;			
 		} else {
 			return 1;
 		}
