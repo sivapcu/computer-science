@@ -31,6 +31,7 @@ public class LinkedListGenericWithTail<E> {
 			tail = node;
 		}
 		currentSize++;
+		System.out.println("Added the first element : " + e);
 	}
 	
 	public void addLast(E e) {
@@ -43,6 +44,7 @@ public class LinkedListGenericWithTail<E> {
 			tail = node;
 		}
 		currentSize++;
+		System.out.println("Added the last element : " + e);
 	}
 	
 	public E removeFirst() {
@@ -106,15 +108,25 @@ public class LinkedListGenericWithTail<E> {
 	public static void main(String[] args) {
 		LinkedListGenericWithTail<Integer> ll = new LinkedListGenericWithTail<Integer>();
 		ll.addFirst(3);
+		ll.print();
 		ll.addFirst(2);
+		ll.print();
 		ll.addFirst(1);
+		ll.print();
 		ll.addLast(4);
+		ll.print();
 		ll.addLast(5);
+		ll.print();
 		ll.removeFirst();
+		ll.print();
 		ll.removeLast();
+		ll.print();
 		ll.addLast(6);
+		ll.print();
 		ll.addLast(7);
+		ll.print();
 		ll.addLast(8);
+		ll.print();
 		ll.removeLast();
 		ll.print();
 	}

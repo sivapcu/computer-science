@@ -1,9 +1,6 @@
 package com.sivapcu.ds.linkedlist;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
-public class LinkedListGeneric<E> implements Iterable<E> {
+public class LinkedListGeneric<E> {
 	class Node {
 		E data;
 		Node next;
@@ -97,33 +94,5 @@ public class LinkedListGeneric<E> implements Iterable<E> {
 		ll.removeLast();
 		ll.removeLast();
 		ll.print();
-	}
-
-	@Override
-	public Iterator<E> iterator() {
-		return new IteratorHelper();
-	}
-	
-	class IteratorHelper implements Iterator<E> {
-		Node index;
-		
-		public IteratorHelper() {
-			index = head;
-		}
-		
-		@Override
-		public boolean hasNext() {
-			return index!=null;
-		}
-
-		@Override
-		public E next() {
-			if(index == null) {
-				throw new NoSuchElementException();
-			} 
-			E val = index.data;
-			index = index.next;
-			return val;
-		}
 	}
 }
